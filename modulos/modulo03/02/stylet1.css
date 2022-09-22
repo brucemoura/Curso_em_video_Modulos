@@ -1,0 +1,84 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(119, 136, 153);
+}
+
+main{
+  width: 100%;
+}
+
+
+/*tabela simples*/
+.artigo1  table{
+  margin: auto;
+  width: 400px;
+  height: 400px;
+  border-collapse: collapse;
+}
+
+.artigo1 h1, h2{
+  text-align: center;
+}
+.artigo1 td{
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;/*alinhamento vertical */
+}
+.artigo1 .numero{
+  text-align: right;
+}
+
+.artigo1  #u1,#u2,#u3,#u4{
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+
+
+/*tabela complexa*/
+.artigo2{
+  margin-top: 50px;
+}
+
+.artigo2 table{
+  width: 100%;
+  max-width: 500px;
+  border-collapse: collapse;
+  margin: auto;
+  position: relative;/*obrigatorio p/ fazer o cabeçalho fixo*/
+}
+
+.artigo2 td, .artigo2 th{
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.artigo2 thead, .artigo2 tfoot{
+  color: white;
+  background-color: rgb(63, 63, 63);
+}
+
+.num{
+  text-align: right;
+}
+
+/*fazendo efeito zebrado*/
+
+.artigo2 > table > tbody > tr:nth-child(2n){
+  background-color: rgba(128, 128, 128, 0.473);
+}
+/*a pseudoclasse nth-child(2n) significa que de duas em duas ele vai colocar a cor cinza / outra coisa que podemos colocar no lugar de 2n e odd(impar) e even(par)*/
+
+/*fazendo o cabeçãlho fixo*/
+.artigo2 > table > thead > tr > th{
+  position: sticky;
+  top: -1px;
+  background-color: rgb(63, 63, 63);
+}

@@ -1,0 +1,17 @@
+body{
+  background-color: aqua;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#principal{
+  color: green;
+  text-align: center;
+}
+
+h2{
+  color: blue;
+}
+
+h3{
+  color: rgb(0, 182, 121);
+}

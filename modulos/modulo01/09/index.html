@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mídias em HTML5</title>
+    <style>
+      iframe {
+        border: 0;
+      }
+      .audi {
+        display: block;
+      }
+      .videos {
+        text-align: center;
+      }
+      .imagens {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Imagen dínamica</h2>
+    <p>
+      tente abrir esse site eme varios dispositivos diferentes ou simplesmente
+      diminua a tela do seu computador
+    </p>
+    <div class="imagens">
+      <picture>
+        <source
+          media="(max-width: 725px)"
+          srcset="image/foto-p.png"
+          type="image/png"
+        />
+        <source
+          media="(max-width: 1025px)"
+          srcset="image/foto-m.png"
+          type="image/png"
+        />
+        <img src="image/foto-g.png" alt="imagem grande" />
+        <!--a tag picture e usada p/ fazer imagens dinamicas ou seja imagens que vão se adaptar com o tamanho da sua tela-->
+        <!--1º voce tem que colocar uma imagem com a tag img(e melhor usar a maior imagem no começo) depois nos source's voce vai colocando as outras imagens (da maior(começo) para a menor(final))-->
+      </picture>
+    </div>
+
+    <h2>Reproduzindo Áudio</h2>
+    <p>Vamos aprender a reproduzir audios em HTML5</p>
+    <!--para colocar o audio podemos fazer de duas maneiras, veremos abvaixo:-->
+    <!--primeira maneira-->
+    <audio class="audi" controls>
+      <source src="audio/A Simple Feeling - Alge.mp3" />
+      <!--primeiro a aparecer-->
+      <source src="audio/London Bayou - ALBIS.mp3" />
+      <source src="audio/The Von Trapp Family Choir - Alge.mp3" />
+      <!--Só vai aparecer 1-->
+      <!--fazer desse jeito e melhor para voce colocar o mesmo audio mas com formatos diferentes p/ caso o site não rode um formato ele rodará outro-->
+    </audio>
+    <!--segunda maneira
+    <audio preload="metadata" controls src="audio/A Simple Feeling - Alge.mp3">azxc</audio>
+    <audio controls src="audio/London Bayou - ALBIS.mp3"></audio>
+    <audio controls src="audio/The Von Trapp Family Choir - Alge.mp3"></audio>
+  -->
+    <!--
+    Suporta os formatos: MP3, WAV e OGG 
+    OBS: qualquer texto colocado entre a tag audio será exibido em navegadores que não suportam a tag audio
+    Atributos: autoplay, controls, loop, muted, preload(auto, metadata ou none) src(url)
+  -->
+
+    <h2>Inserindo videos Hospedados localmente</h2>
+    <p>este videos está hospedado no meu proprio servidor.</p>
+    <div class="videos">
+      <video
+        height="400px"
+        controls
+        src="videos/video_2022-08-15_13-31-35.mp4"
+        muted
+        preload="metadata"
+        autoplay
+      ></video>
+
+      <video
+        height="400px"
+        controls
+        src="videos/videoplayback.mp4"
+        preload="metadata"
+        autoplay
+      ></video>
+
+      <video
+        height="400px"
+        controls
+        src="videos/video_2022-08-15_13-31-35.mp4"
+        muted
+        preload="metadata"
+        autoplay
+      ></video>
+    </div>
+    <!--assim como o audio e possivel colocar source's no video, vai ser a mesma coisa e para nao ficar repetindo nao vou fazer no video-->
+    <!--
+    Suporta os formatos: MP4, WEBM e OGG 
+    OBS: qualquer texto colocado entre a tag audio será exibido em navegadores que não suportam a tag audio
+    Atributos: autoplay, controls, poster(define uma img p/  ser exibida enquanto o video carrega ou antes de reproduzir), loop, muted, preload(auto, metadata ou none) src(url)
+  -->
+
+    <h2>Inserindo Videos Externos</h2>
+
+    <h3>inserindo videos do YouTube</h3>
+    <iframe
+      width="100%"
+      height="768"
+      src="https://www.youtube.com/embed/asSnpF6vJAI"
+      title="YouTube video player"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+
+    <h3>Inserindo videos do vimeo</h3>
+    <div style="padding: 56.25% 0 0 0; position: relative">
+      <iframe
+        src="https://player.vimeo.com/video/149214499?h=11633bcb6f&title=0&byline=0&portrait=0"
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%"
+        allow="autoplay; fullscreen; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+h1{
+  background-color: lightblue;
+  width: 400px;
+  height: 300px;
+  border: 10px solid rgb(92, 92, 92);
+  padding: 10px;
+  margin:  20px auto;
+  outline: 5px solid black;
+  text-align: center;
+}
+
+a{
+  padding: 11px;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.d1, .d2{
+  box-sizing: border-box;
+  margin-top: 80px;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+
+.d1:hover{
+  background-color: brown;
+
+}
+
+.d2{
+  background-color: brown;
+}
+
+.d2:hover{
+  background-color: lightblue;
+}

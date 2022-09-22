@@ -1,0 +1,68 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+/*usando root*/
+/*
+:root
+  --acolo: red;
+
+  --qualquer nome atributo
+
+*/
+
+/*colocando fonte por exportação*/
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+/*nome da familia: font-family: 'Kaushan Script', cursive;*/
+
+
+/*colocando fonte por importação*/
+@font-face {
+  font-family: 'familia work';
+  src: url(font/static/WorkSans-Regular.ttf);
+}
+body{
+  font-family: 'familia work';
+  font-size: 1em;
+  font-weight: 100;
+  font-style: italic;
+  text-decoration: none;
+}
+
+h1{
+  color: var(--acolo);
+}
+
+/*
+Medidas de fontes
+Medidas Absolutas
+cm, mm, in, px, pt, pc 
+
+Medidas Relativas
+em, ex, rem, vw, vh, %
+
+recomendaçao de uso de medidas em fontes: 
+em e px 16px geralmente e = 1em
+*/
+
+/*
+Pesos da fonte
+lighter normal bold bolder
+tambem pode ser numerada: de 100 a 900
+*/
+
+/*
+estilo a fonte
+normal italic 
+*/
+
+/*
+Decoração de texto
+underline overline dashed dotted double none line-through
+*/
+
+.alinhamento{
+  margin: 20px;
+  text-align: center;
+  /*center left right justify*/
+}

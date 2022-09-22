@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Formulário</title>
+</head>
+<body>
+  <h1>Exemplo de Formulário</h1>
+  <form action="cadastro.php" method="post" autocomplete="on">
+    <div>
+      <label for="n1">Número 01:</label>
+      <input 
+      type="number" 
+      name="n1" 
+      id="n1" 
+      min="0" 
+      max="49" 
+      required 
+      oninput="soma.innerHTML = Number(n1.value) + Number(n2.value)">
+    </div>
+    <div>
+      <label for="n2">Número 02:</label>
+      <input 
+      type="number"
+      name="n2" 
+      id="n2" 
+      min="50" 
+      max="100" 
+      required
+      oninput="soma.innerHTML = Number(n1.value) + Number(n2.value)">
+    </div>
+    <div>
+      <label for="soma">Soma:</label>
+      <output id="soma">
+        0
+      </output>
+    </div>
+    <div>
+      <button type="submit">Enviar</button>
+      <button type="reset">Limpar</button>
+    </div>
+  </form>
+</body>
+</html>

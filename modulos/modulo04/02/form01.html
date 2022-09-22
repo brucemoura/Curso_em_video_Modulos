@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Formulários</title>
+</head>
+<body>
+  <h1>Meu primeiro Formulário</h1>
+  <!--Formulario e um locla aonde seus visitantes podem colocar dados-->
+  
+  <form method="get" action="cadastro.php" autocomplete="off">
+    <!--O action="cadastro.php" serve para voce mandar os dados que foram captados para algum lugar no caso "cadastro.php"-->
+    <!--use autocomplete="off" para o formulario não completar caso voce clique nele-->
+    <!--O HTML tem 2 tipos de method o primeiro e o GET e o segundo e o POST-->
+    <!--GET -> use o get quando um dado NÃO for sensivel, exemplo: um nome, uma data (quando voce envia dado por get voce so pode usar 3mil bytes, se ultrapassar 3 mil bytes o get nao e o elemento para você, e voce tambem não pode enviar arquivos via get )-->
+    <!--POST -> com o post seus dados ficam mais ocultos, mas não significa que ele sozinho pode ser usado para ocultar suas senhas e etc, para ocultar senhas voce precisa de criptografia e nao veremos isso aqui-->
+    <label for="nome">Nome:</label><input type="text" name="nome" id="nome">
+
+    <br><br>
+
+    <label for="sobrenome">Sobrenome:</label><input type="text" name="sobrenome" id="sobrenome">
+    <!--O label serve para conectar o nome da caixa com a caixa em si, e para conectar dentro de label temos o atributo for e dentro de for voce vai colocar o id de input-->
+
+    <br><br>
+
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>

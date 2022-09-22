@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/style.css">
+  <title>Estilização</title>
+  <style>
+    .interno{
+      background-color: green;
+      padding: 10px 20px;
+      border: 2px solid black;
+      margin: 1px 0;
+    }
+
+    .interno > h2 ,.interno > h3{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .interno > p{
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <h1>estilização</h1>
+  <div style="background-color: red; padding: 10px 30px; border: 2px solid black;">
+    <h2>Inline</h2>
+    <h3>O texto abaixo servirá de exemplo</h3>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda eaque laudantium dolorum! Quod nihil velit, ut expedita autem obcaecati earum amet esse excepturi reiciendis, nemo natus illum doloribus asperiores doloremque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, voluptatem temporibus eum dicta earum quibusdam tempore totam officia deleniti eveniet facere harum sed cupiditate quisquam fugit non voluptatibus modi fuga.</p>
+    <!--nunca usar-->
+    <!--deixa o html muito bagunçado-->
+    <!--e nao tem muito sentido usar ele sendo que tem o interno e externo-->
+  </div>
+
+  <div class="interno">
+    <h2>Interno</h2>
+    <h3>O texto abaixo servirá de exemplo</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi molestias similique omnis eaque quisquam vero laudantium aperiam, pariatur quaerat iste nesciunt, ipsa nisi consectetur aliquid ad minima aut est! Quo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae incidunt sint aspernatur dicta unde nisi voluptatem aliquam delectus est! Officiis alias vel necessitatibus itaque aperiam ipsam hic enim fugiat similique.</p>
+    <!--usar so se for pouco codigo-->
+    <!--deixa a pagina muito extensa e o externo resolve esse problema-->
+  </div>
+
+  <div class="externo">
+    <h2>Externo</h2>
+    <h3>O texto abaixo servirá de exemplo</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quis voluptatum sequi. Eos impedit voluptates sequi corrupti mollitia obcaecati eligendi id laborum at, quam minus officia excepturi enim. Obcaecati, magni! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi saepe eius enim perferendis molestiae consequatur a, atque quam blanditiis quasi deleniti ad sed magni est eligendi unde? Aut, modi ad?</p>
+    <!--sempre usar esse-->
+    <!--deixa seu código muito mais organizado, voce pode ter varias paginas, não deixa seu html poluido, etc...-->
+  </div>
+
+</body>
+</html>

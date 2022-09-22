@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="iframe.css">
+  <title>Iframes</title>
+</head>
+<body>
+  <h1>meu site principal</h1>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur veniam incidunt cumque alias eius quas voluptate porro culpa suscipit commodi, non nulla quibusdam sit eum illo harum dolorum quam doloremque!</p>
+  <iframe 
+  src="pag01.html" 
+  sandbox="sandbox"
+  referrerpolicy="no-referer"></iframe>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus reiciendis neque dicta. Necessitatibus, reprehenderit eum! Illum quae quidem ratione, quisquam pariatur accusantium repellendus quibusdam magni beatae voluptatum sequi repudiandae enim.</p>
+  <!--se voce quiser bloquear todas as açoes que são potencialmente maliciosas dos sites que voce coloca dentro do iframe e simples, basta voce usar uma configuração chamada sandbox="sandbox" outra coisa que podemos usar também e o referrerpolicy="no-referer" quando voce coloca isso voce diz que o que etá carregado dentro do iframe nao vai coletar nem um tipo de informaçoes do usuario -->
+  <!--sandbox="sandbox" voce deixa a seguranca no maximo mas para deixar o form funcinar podemos dizer allow-same-origin permitir arquivos de mesma origem, tambem tem allow-forms que vai permitir formularios e allow-scripts que vai permitir scripts  -->
+</body>
+</html>

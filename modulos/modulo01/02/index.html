@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parágrafos</title>
+  <style>
+    body{
+      color: white;
+      background-color: rgb(73, 73, 73);
+    }
+    a{
+      text-decoration: none;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h1>Parágrafos e quebras de linha</h1>
+  <p>
+    voce pode escrever
+    um parágrafo de qualquer jeito
+    basta coloca-lo dentro de uma tag &lt;p&gt;
+  </p>
+  <p>mas ele não vai sair como você pensa, ele vai sair tudo na mesma linha mesmo que voce coloque um espaço entre eles</p>
+  <p>para voce pular de linha podemos fazer varias coisas</p>
+  <ul>
+    <li>
+      <p>a primeira e mais simples e usando a tag &lt;br&gt; com ela voce vai quebrar a linha e vai pular para baixo.</p>
+    </li>
+    <li>
+      <p>outra coisa que podemos fazer e usar a tag &lt;p&gt;, mas com a tag p e melhor voce nao usar uma tag dessa dentro da outra exemplo: </p>
+    </li>
+    <pre>
+      <code>
+        &lt;p&gt; 
+          &lt;p&gt;
+          &lt;/p&gt;
+        &lt;/p&gt;
+      </code>
+    </pre>
+    <li>
+      <p>se voce colocar uma tag p detro de outra tag p elas podem ficar se quebrando </p>
+    </li>
+    <li>
+      <p>se voce quiser estilizar alguma coisa dentro de uma tag p e melhor usar a tag &lt;span&gt;</p>
+    </li>
+    <li>
+      <p>ou em um caso mais avançado vamos utilizar o CSS "veremos mais pra frente"</p>
+    </li>
+  </ul>
+
+  <h2>Agora vamos ver como adicionar alguns símbolos e emojis</h2>
+  <p>adicionando alguns símbolos</p>
+  &reg;
+  &copy;
+  &trade;
+  &euro;
+  &pound;
+  &yen;
+  &cent;
+  &delta; (minuscula)
+  &Delta; (maiuscula)
+  &uarr;
+  &darr;
+  <p>adicionando alguns emojis</p>
+  <p>para adicionar isso podemos fazer de duas maneiras</p>
+  <p>a primeira e so copiar o emoji e colar 🖕 (funciona na maioria dos navegadores)</p>
+  <p>a outra maneira e pegar o codigo dele, esse codigo no <a href="https://emojipedia.org/">site</a> ele vai estar assim U+1F548 mas voce so pega aparti do numero.</p>
+  <p>e para voce colocar o emoji voce nao pode so colocar o código direto, voce tem que colocar isso primeiro "&#x" e logo em seguida colocar o código &#x1F595&#x1F92C&#x1F595</p>
+</body>
+</html>

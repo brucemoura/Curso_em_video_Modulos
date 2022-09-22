@@ -1,0 +1,26 @@
+/*aparelho deitado (landscape)*/
+body{
+  background-color: aqua;
+  position: relative;
+}
+
+.foto{
+  width: 90%;
+  height: 70%;
+  max-width: 800px;
+  max-height: 700px;
+  background-image: url('../../imagens/cev-landscape.jpg');
+  background-position: center;
+  background-size: cover;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1{
+  width: 100%;
+  text-align: center;
+  padding: 0;
+}
