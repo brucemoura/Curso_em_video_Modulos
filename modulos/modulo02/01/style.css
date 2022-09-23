@@ -11,7 +11,8 @@ h1, p{
 
 .degrade{
   margin: auto;
-  width: 800px;
+  max-width: 800px;
+  width: 95%;
   height: 500px;
   border: 1px solid black;
   background-image: linear-gradient(to top/*direção*/ /*tambem podemos usar angulo em graus com deg45 por exemplo*/,#37EAED, #39F7C5, #3FE088, #39F759, #51ED37/*cores*/);

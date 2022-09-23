@@ -18,6 +18,31 @@
       .imagens {
         text-align: center;
       }
+
+      @media screen and (max-width: 1205px){
+        #v2{
+          width: 50%;
+        }
+      }
+
+      @media screen and (max-width: 950px){
+        #v1{
+          width: 75%;
+        }
+        #v2{
+          width: 80%;
+        }
+        #v3{
+          width: 75%;
+        }
+      }
+
+      @media screen and (max-width: 550px){
+        .audi{
+          display: block;
+          margin: 0 auto;
+        }
+      }
     </style>
   </head>
   <body>
@@ -71,6 +96,7 @@
     <p>este videos está hospedado no meu proprio servidor.</p>
     <div class="videos">
       <video
+        id="v1"
         height="400px"
         controls
         src="videos/video_2022-08-15_13-31-35.mp4"
@@ -80,6 +106,7 @@
       ></video>
 
       <video
+        id="v2"
         height="400px"
         controls
         src="videos/videoplayback.mp4"
@@ -88,6 +115,7 @@
       ></video>
 
       <video
+        id="v3"
         height="400px"
         controls
         src="videos/video_2022-08-15_13-31-35.mp4"

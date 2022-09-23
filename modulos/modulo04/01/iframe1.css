@@ -18,12 +18,14 @@ p{
 
 a{
   text-decoration: none;
+  color: blue;
 }
 
 iframe{
   display: block;
   margin: 10px auto;
-  border: 0;
+  border: none;
   width: 500px;
   height: 450px;
 }
+

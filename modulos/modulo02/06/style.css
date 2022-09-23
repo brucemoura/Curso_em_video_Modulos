@@ -4,7 +4,8 @@
 }
 h1{
   background-color: lightblue;
-  width: 400px;
+  max-width: 400px;
+  width: 100%;
   height: 300px;
   border: 10px solid rgb(92, 92, 92);
   padding: 10px;
@@ -14,6 +15,9 @@ h1{
 }
 
 a{
+  display: block;
+  margin: auto;
+  width: 250px;
   padding: 11px;
   border: 1px solid rgb(0, 0, 0);
 }
@@ -37,4 +41,11 @@ a{
 
 .d2:hover{
   background-color: lightblue;
+}
+
+.meio{
+  max-width: 360px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
 }
