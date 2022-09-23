@@ -11,51 +11,46 @@
   Lilás: #5f2c82
 */
 
-html, body{
+body, html{
   background-color: #5f2c82;
   height: 100vh;
   width: 100vw;
 }
 
 main{
-  position: relative;
   height: 100vh;
   width: 100vw;
+  position: relative;
+
 }
 
 #login{
-  background-color: white;
-  max-width: 900px;
-  width: 85%;
+  width: 250px;
   height: 500px;
-  border-radius: 10px;
-  overflow: hidden;
+  background-color: rgb(195, 227, 255);
+  border-radius: 20px;
 
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
+  
+  overflow: auto;
 
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.247);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.425);
 }
 
 #image{
   display: block;
-  background-color: #5f2c82;
-  background-image: url(../images/pexels-scott-webb-139198.jpg);
-  background-size: cover;
-  background-position: center bottom;
+  background-color: blue;
+  background-image: url(../images/predio.jpg);
+  background-position: left bottom;
   background-repeat: no-repeat;
-
+  background-size: cover;
   height: 200px;
 }
 
-#campos{
+#formulario{
   display: block;
   padding: 10px;
-
-}
-
-.filbord{
-  border: 0;
 }
