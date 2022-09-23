@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilos/style.css">
+  <title>Tela de login</title>
+</head>
+<body>
+  <main>
+    <section id="login">
+      <div id="image">
+
+      </div>
+      <div id="campos">
+        <h1>Login</h1>
+        <p>Seja bem-vindo(a). <br> Faça o login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+        <form action="login.php" method="post">
+          <fieldset class="filbord">
+            <label for="nome">
+              👤
+              <input 
+              type="text" 
+              name="nome" 
+              id="nome" 
+              placeholder="Nome"
+              required>
+              <br>
+            </label>
+            <label for="senha">
+              &#x1F510
+              <input 
+              type="password" 
+              name="senha" 
+              id="senha"
+              placeholder="Nome"
+              required> <br>
+            </label>
+            <button type="submit">Entrar</button>
+            <button type="submit">Esquecia a senha</button>
+          </fieldset>
+        </form>
+        <p>Não tem uma conta faça a sua <a href="#">Cria conta</a></p>
+      </div>
+    </section>
+  </main>
+
+  
+
+</body>
+</html>

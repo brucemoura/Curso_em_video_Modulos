@@ -1,0 +1,60 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*
+  Paleta de Cores
+  Verde: #49a09d
+  Lilás: #5f2c82
+*/
+
+html, body{
+  background-color: #5f2c82;
+  height: 100vh;
+  width: 100vw;
+}
+
+main{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+#login{
+  background-color: white;
+  width: 50%;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.247);
+}
+
+#image{
+  display: block;
+  background-color: #5f2c82;
+  background-image: url(../images/pexels-scott-webb-139198.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+
+  height: 200px;
+}
+
+#campos{
+  display: block;
+  padding: 10px;
+
+}
+
+.filbord{
+  border: 0;
+}

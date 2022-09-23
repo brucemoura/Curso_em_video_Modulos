@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+/*'Passion One'*/
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+/*'Sriracha'*/
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: black;
+}
+
+header{
+  padding: 40px 0;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+header h1{
+  font-size: 7vw;
+  font-family: 'passion one';
+  letter-spacing: 2px;
+  /*text-transform: uppercase; colocar todas as letras em maiuscula*/
+  font-variant: small-caps;/* todas as letras ficam em maiuscula mas não mudam o tamanho*/
+}
+
+header > p{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header > p > a{
+  text-decoration: none;
+  font-size: 17px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+main > .esquerda, main > .direita{
+  font-size: 20px;
+  font-family: 'Sriracha';
+  padding: 60px 20px 100px 20px;
+}
+
+main > .esquerda{
+  background-color: white;
+}
+
+main > .direita, #um , #dois{
+  background-position:right center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+main > .direita, #um{
+  background-image: url(images/background001.jpg);
+}
+main > .direita, #dois{
+  background-image: url(images/background002.jpg);
+}
+
+main > .direita > p{
+  display: inline-block;
+  padding: 10px;
+  margin-left: -10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+footer{
+  padding: 5px 0;
+  text-align: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (min-width: 900px) {
+  header{
+    width: 100%;
+  }
+
+  main{
+    width: 90%;
+    margin: auto;
+  }
+
+  .direita{
+    overflow: hidden;
+  }
+  .direita > p{
+    float: right;
+  }
+
+  .esquerda {
+    clear: both;
+  }
+}
+
+
+@media (min-width: 1100px) {
+  main{
+    width: 75%;
+  }
+}
