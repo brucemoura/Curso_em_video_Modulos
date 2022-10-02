@@ -33,6 +33,10 @@ h1{
   color: var(--acolo);
 }
 
+p{
+  text-align: justify
+}
+
 /*
 Medidas de fontes
 Medidas Absolutas
@@ -65,4 +69,10 @@ underline overline dashed dotted double none line-through
   margin: 20px;
   text-align: center;
   /*center left right justify*/
+}
+
+main{
+  margin: 30px auto;
+  width: 100%;
+  max-width: 650px;
 }
