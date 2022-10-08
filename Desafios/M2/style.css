@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  box-sizing: border-box;
 }
 
 body{
@@ -10,18 +9,24 @@ body{
 }
 
 header{
-  width: 100%;
-  padding: 10px;
+  padding: 10px ;
   background-color: #7895B2;
   text-align: center;
-  display: inline-block;
+}
+
+header > h1{
+  text-align: center;
 }
 
 header > nav{
-  margin: 10px;
+  margin: 14px 0;  
 }
 
-header > nav > ul  > li{
+header > nav > ul > div{
+  display: inline;
+}
+
+li{
   display: inline;
   margin: 5px;
   padding: 10px;
@@ -30,19 +35,21 @@ header > nav > ul  > li{
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-header > nav > ul > li > a{
+a{
   text-decoration: none;
   color: black;
 }
 
-header > nav > ul >  li:hover{
+li:hover{
   background-color: #409af3;
+
 }
 
 main{
   background-color: #fff7eb;
   width: 100%;
   max-width: 756px;
+  min-height: 615px;
   margin: 10px auto;
   padding: 15px;
   border-radius: 5px;
@@ -71,15 +78,29 @@ footer{
 
 /*novas config*/
 
-@media screen and (max-width: 1070px){
+@media screen and (max-height: 790px){
   main{
-    width: 95%;
+    min-height: 483px;
+  }
+}
+
+@media screen and (max-width: 1070px){
+  .tres{
+    margin: 25px 0;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 730px){
+  .dois{
+    margin: 25px 0;
+    display: block;
   }
 }
 
 @media screen and (max-width: 610px){
   .um{
-    margin: 25px;
+    margin: 25px 0;
     display: block;
   }
 

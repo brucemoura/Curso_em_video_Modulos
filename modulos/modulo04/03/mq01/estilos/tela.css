@@ -1,38 +1,111 @@
-/*Estilo para Telas*/
-
 *{
   margin: 0;
   padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-html, body{
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1em;
+body{
+  background-color: #AEBDCA;
 }
 
 header{
-  background-color: lightgray;
+  padding: 10px ;
+  background-color: #7895B2;
+  text-align: center;
 }
 
 header > h1{
   text-align: center;
-  padding-top: 10px;
 }
 
-nav li{
-  display: inline-block;
+header > nav{
+  margin: 14px 0;  
+}
+
+header > nav > ul > div{
+  display: inline;
+}
+
+header > nav > ul > div > li{
+  display: inline;
+  margin: 5px;
+  padding: 10px;
+  background-color: #6493c2;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+header > nav > ul > div > li > a{
+  text-decoration: none;
+  color: black;
+}
+
+header > nav > ul > div > li:hover{
+  background-color: #409af3;
+
+}
+
+main{
+  background-color: #fff7eb;
+  width: 100%;
+  max-width: 756px;
+  height: 615px;
+  margin: 10px auto;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+main > h1{
+  text-align: center;
+}
+
+main > p{
+  text-align: justify;
   margin: 10px;
-  color: white;
 }
 
-nav{
-  padding: 2px;
-  background-color: rgb(56, 56, 56);
-} 
-
-article{
-  width: 600px;
-  display: block;
-  margin: auto;
+span{
+  color: rgb(167, 0, 0);
 }
 
+footer{
+  height: 27px;
+  text-align: center;
+  line-height: 27px;
+  background-color: #E8DFCA;
+  color: blue;
+}
+
+/*novas config*/
+
+@media screen and (max-height: 790px){
+  main{
+    height: 483px;
+  }
+}
+
+@media screen and (max-width: 1070px){
+  .tres{
+    margin: 25px;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 730px){
+  .dois{
+    margin: 25px;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 610px){
+  .um{
+    margin: 25px;
+    display: block;
+  }
+
+  main{
+    width: 90%;
+  }
+}
+/*final novas config*/

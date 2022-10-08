@@ -14,10 +14,10 @@ nav{
   display: none;
 }
 
-article::after{
+main::after{
   content: 'Esse artigo foi impresso através do site (_________)';
 }
 
-article{
+main{
   width: 100%;
 }

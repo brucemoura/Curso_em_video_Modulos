@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #AEBDCA;
+}
+
+header{
+    padding: 10px ;
+    background-color: #7895B2;
+    text-align: center;
+}
+
+header > h1{
+    text-align: center;
+}
+
+header > nav{
+    margin: 14px 0;  
+}
+
+header > nav > ul > div{
+    display: inline;
+}
+
+li{
+    display: inline;
+    margin: 5px;
+    padding: 10px;
+    background-color: #6493c2;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+li:hover{
+    background-color: #409af3;
+
+}
+
+main{
+    background-color: #fff7eb;
+    width: 100%;
+    max-width: 756px;
+    min-height: 615px;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+main > h1{
+    text-align: center;
+}
+
+main > p{
+    text-align: justify;
+    margin: 10px;
+}
+
+span{
+    color: rgb(167, 0, 0);
+}
+
+footer{
+    height: 27px;
+    text-align: center;
+    line-height: 27px;
+    background-color: #E8DFCA;
+    color: blue;
+}
+
+/*novas config*/
+
+@media screen and (max-height: 790px){
+    main{
+    min-height: 483px;
+    }
+}
+
+@media screen and (max-width: 1070px){
+    .tres{
+    margin: 25px 0;
+    display: block;
+    }
+}
+
+@media screen and (max-width: 730px){
+    .dois{
+    margin: 25px 0;
+    display: block;
+    }
+}
+
+@media screen and (max-width: 610px){
+    .um{
+    margin: 25px 0;
+    display: block;
+    }
+
+    main{
+    width: 90%;
+    }
+}
+/*final novas config*/
